@@ -1,0 +1,17 @@
+{
+    "name": "tile-config",
+    "version": 1.0,
+
+    "cellType": "grass",
+    "pickBehavior": "probability",
+    "pickDetails": [{
+        "filename": "dirt.png",
+        "chance": 1
+    }, {
+        "filename": "grass.jpg",
+        "change": 10
+    }, {
+        "filename": "looserocks.png",
+        "chance": 1
+    }]
+}

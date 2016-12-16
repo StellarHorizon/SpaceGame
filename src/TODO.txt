@@ -1,0 +1,38 @@
+TODO:
+- Adjust framerate dynamically according to current game state
+- Add FPS counter
+- Allow adding a sprite to a GameMap's fieldBoundary also add to the master list of physicsSprites
+- Find cause of one sided sprite collisions (sprite unaffected by collisions but other sprites bounce off when colliding)
+- Implement faster PhysicsSprite iteration loop, one calculation per sprite pair (Complexity: O((N)(N+1)/2) )
+- Design main menu screens
+- Design JSON file reading system to automatically load game configurations
+	* Could be very useful for organizing saved game states, menus, etc.
+	* Would allow for some changes to be made to the game at runtime without recompile
+	* Possible future uses:
+		- Path to resources folder for ResourceLoader class read by file rather than hardcoded
+- Create core code for shooting projectiles from ships (Done, will be merged in build soon)
+- Design a sample level to showcase core functionality of the game
+- Add pausing function to the main game loop
+- Determine how specific sprites (such as ships, asteroids, buttons) know where to request their image
+- Implement a timer-like system to execute events after a given interval of time
+	* Allow this to be relative to amount of time of frames passed
+
+####################
+
+COMPLETE:
+- Allow ActionButton text to scale with the image
+	* Fix ActionButton text centering code
+- Add support for isVisible
+- Implement a redraw flag for sprites to indicate sprite's image should be redrawn
+- Fix MapBoundary to only redraw image if needed
+- Move ActionButton set position according to reference point to Sprite class
+- Separate sprites into GUI sprites and ingame sprites
+- Add class to contain GUI elements ingame
+- Multithread the drawing and game update loops
+- Multiple MapBoundary functionality (allowing for asteroid fields)
+- Ability to toggle specific verbose debugging (to System.out)
+- Remove DrawnFeature
+- Autoscale the game graphics to the size of the user's window
+- Develop level bounds and restrict objects to always stay within the map
+- Resource loader class to automatically scan and load in resource files
+	* Add ability to load test images by default or when there is an error

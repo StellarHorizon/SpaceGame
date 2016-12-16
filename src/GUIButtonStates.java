@@ -1,0 +1,4 @@
+enum GUIButtonStates
+{
+	ACTIVE, DISABLED, HOVER, NORMAL, PRESSED
+}
